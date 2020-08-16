@@ -29,7 +29,6 @@ function App() {
   async function updateRepositories() {
     const response = await api.get('/repositories');
     if (response.status === 200) {
-      console.log(response.data)
       setRepositories(response.data);
     }
   }
